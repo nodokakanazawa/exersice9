@@ -1,4 +1,4 @@
-＊{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -21,10 +21,13 @@
 .box{
   width:300px;
   position:relative;
-  margin-right:30px;
+  margin-left:auto;
+  margin-right:auto;
   padding:10px;
   background-color:#EEEEEE;
 }
+
+
 
 .step1{
   height:150px;
@@ -78,18 +81,24 @@
   background-color: #AAAAAA
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
   header{
     width:100%;
   }
   .main{
     width:100%;
-    display: block;
+    display:block;
   }
 
   .box{
     width:90%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    }
+
+  .box:last-child{
+    margin-bottom: 0;
   }
 
   .step1{
